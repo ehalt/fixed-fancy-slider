@@ -51,7 +51,7 @@ const getImages = (query) => {
 let slideIndex = 0;
 const selectItem = (event, img) => {
   let element = event.target;
-  element.classList.toggle('added');
+  element.classList.toggle('Successfully Added');
  
   let item = sliders.indexOf(img);
   if (item === -1) {
@@ -64,7 +64,7 @@ var timer
 const createSlider = () => {
   // check slider image length
   if (sliders.length < 2) {
-    alert('Select at least 2 image.')
+    alert('Hey dude, please select at least 2 picture.')
     return;
   }
   // crate slider previous next area
